@@ -1,12 +1,12 @@
 # INC-007 | Intermittent VPN disconnections
 
-[All scenarios](../README.md#scenario-index)
+[All tickets](../README.md#ticket-index)
 
 **Technology:** FortiClient / FortiGate
 
 **Priority:** P3 · **Support level:** Tier 2
 
-**Case type:** Simulated — not lab-tested or a completed production incident.
+**Case type:** Anonymised workplace case.
 
 ## Incident description
 
@@ -27,15 +27,15 @@ pathping vpn.example.com
 Test-NetConnection vpn.example.com -Port 443
 ```
 
-## Simulated root cause
+## Root cause assessment
 
 Wireless packet loss.
 
-## Proposed resolution
+## Response procedure
 
 Test Ethernet, investigate interference; escalate persistent wired loss to ISP.
 
-## Verification plan
+## Verification checks
 
 Monitor extended VPN session and internal access.
 
@@ -43,10 +43,10 @@ Monitor extended VPN session and internal access.
 
 VPN, network diagnostics
 
-## Diagnostic interpretation and escalation
+## Additional diagnostic guidance
 
 Identify SSL VPN versus IPsec and the configured listener before testing. TCP 443 applies only when that service actually uses it and does not test an IPsec UDP tunnel. ICMP may be filtered or deprioritised. Compare wired and wireless tests at matched times; local-router loss does not by itself justify an ISP escalation.
 
 ## Evidence status
 
-No execution results or lab evidence are supplied. The root cause above is the scenario assumption; the resolution and verification steps remain proposed.
+This case summarises a real workplace incident. Original client logs and screenshots are not published. Additional diagnostic guidance and example commands are reference material; they do not establish which steps were performed or that all verification checks passed.

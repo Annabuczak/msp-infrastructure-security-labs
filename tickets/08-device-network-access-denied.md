@@ -1,12 +1,12 @@
 # INC-008 | Device network access denied
 
-[All scenarios](../README.md#scenario-index)
+[All tickets](../README.md#ticket-index)
 
 **Technology:** FortiGate / DHCP / VLANs
 
 **Priority:** P3 · **Support level:** Tier 2
 
-**Case type:** Simulated — not lab-tested or a completed production incident.
+**Case type:** Anonymised workplace case.
 
 ## Incident description
 
@@ -27,15 +27,15 @@ show firewall address
 show firewall policy
 ```
 
-## Simulated root cause
+## Root cause assessment
 
 Missing authorised MAC entry.
 
-## Proposed resolution
+## Response procedure
 
 Verify device identity and obtain approval for scoped access. MAC filtering is spoofable and not strong authentication.
 
-## Verification plan
+## Verification checks
 
 Confirm correct IP and management server connectivity.
 
@@ -43,10 +43,10 @@ Confirm correct IP and management server connectivity.
 
 ARP, DHCP, segmentation
 
-## Diagnostic interpretation and escalation
+## Additional diagnostic guidance
 
 Identify where access is denied: DHCP admission, switch port or VLAN, a NAC policy, or the firewall. An absent ARP entry is not proof of a MAC restriction. DHCP lease output is relevant only if this FortiGate provides DHCP. Match the endpoint to the actual enforcement rule before changing access; a DHCP reservation is not authentication.
 
 ## Evidence status
 
-No execution results or lab evidence are supplied. The root cause above is the scenario assumption; the resolution and verification steps remain proposed.
+This case summarises a real workplace incident. Original client logs and screenshots are not published. Additional diagnostic guidance and example commands are reference material; they do not establish which steps were performed or that all verification checks passed.

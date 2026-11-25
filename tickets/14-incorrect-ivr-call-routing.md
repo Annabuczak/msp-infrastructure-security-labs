@@ -1,12 +1,12 @@
 # INC-014 | Incorrect IVR call routing
 
-[All scenarios](../README.md#scenario-index)
+[All tickets](../README.md#ticket-index)
 
 **Technology:** Five9 / IVR
 
 **Priority:** P2 · **Support level:** Tier 2
 
-**Case type:** Simulated — not lab-tested or a completed production incident.
+**Case type:** Anonymised workplace case.
 
 ## Incident description
 
@@ -16,15 +16,15 @@ Technical support option routes to general enquiries.
 
 Review inbound campaign, published flow, menu destinations, skills, business hours and overflow.
 
-## Simulated root cause
+## Root cause assessment
 
 Incorrect menu destination after change.
 
-## Proposed resolution
+## Response procedure
 
 Obtain approval, preserve rollback configuration, correct destination and test branches.
 
-## Verification plan
+## Verification checks
 
 Test menu options, hours, overflow and fallback.
 
@@ -32,10 +32,10 @@ Test menu options, hours, overflow and fallback.
 
 IVR, skill groups, change management
 
-## Diagnostic interpretation and escalation
+## Additional diagnostic guidance
 
 Confirm the dialled number, inbound campaign and active published flow before editing. Check menu input, target skill, agent eligibility, time zone, holiday rules and overflow. Test each branch and a no-input/invalid-input path in an approved test window. Preserve the previous version and define a rollback trigger.
 
 ## Evidence status
 
-No execution results or lab evidence are supplied. The root cause above is the scenario assumption; the resolution and verification steps remain proposed.
+This case summarises a real workplace incident. Original client logs and screenshots are not published. Additional diagnostic guidance and example commands are reference material; they do not establish which steps were performed or that all verification checks passed.

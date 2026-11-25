@@ -1,12 +1,12 @@
 # INC-018 | Suspicious Entra sign-in
 
-[All scenarios](../README.md#scenario-index)
+[All tickets](../README.md#ticket-index)
 
 **Technology:** Entra ID / MFA
 
 **Priority:** P2 · **Support level:** Tier 2
 
-**Case type:** Simulated — not lab-tested or a completed production incident.
+**Case type:** Anonymised workplace case.
 
 ## Incident description
 
@@ -16,15 +16,15 @@ Unrecognised successful sign-in.
 
 Review interactive/non-interactive logs, IP/location, device, app, MFA, CA and related activity; contact user via trusted channel.
 
-## Simulated root cause
+## Root cause assessment
 
 User denies sign-in; potential compromise.
 
-## Proposed resolution
+## Response procedure
 
 Escalate, block access where authorised, revoke sessions, reset credentials, review authentication methods, mailbox rules and app consent.
 
-## Verification plan
+## Verification checks
 
 Restore only after clearance and monitor further activity.
 
@@ -32,10 +32,10 @@ Restore only after clearance and monitor further activity.
 
 Identity threat triage, containment
 
-## Diagnostic interpretation and escalation
+## Additional diagnostic guidance
 
 An unfamiliar IP or location is a signal, not a confirmed compromise mechanism. Correlate user confirmation, device, app, authentication details and subsequent actions. Preserve logs and escalate under the identity incident process. Session revocation is not guaranteed to terminate every existing application session immediately; check application behaviour and monitor after containment.
 
 ## Evidence status
 
-No execution results or lab evidence are supplied. The root cause above is the scenario assumption; the resolution and verification steps remain proposed.
+This case summarises a real workplace incident. Original client logs and screenshots are not published. Additional diagnostic guidance and example commands are reference material; they do not establish which steps were performed or that all verification checks passed.

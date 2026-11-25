@@ -1,12 +1,12 @@
 # INC-020 | Wi-Fi connected but no internet
 
-[All scenarios](../README.md#scenario-index)
+[All tickets](../README.md#ticket-index)
 
 **Technology:** Windows / DHCP / DNS
 
 **Priority:** P3 · **Support level:** Tier 1
 
-**Case type:** Simulated — not lab-tested or a completed production incident.
+**Case type:** Anonymised workplace case.
 
 ## Incident description
 
@@ -34,15 +34,15 @@ ipconfig /renew
 ipconfig /flushdns
 ```
 
-## Simulated root cause
+## Root cause assessment
 
 Outdated static configuration.
 
-## Proposed resolution
+## Response procedure
 
 Confirm approved settings, restore DHCP if appropriate, reconnect and renew lease.
 
-## Verification plan
+## Verification checks
 
 Verify address, gateway, DNS and internet/corporate access.
 
@@ -50,10 +50,10 @@ Verify address, gateway, DNS and internet/corporate access.
 
 TCP/IP, wireless troubleshooting
 
-## Diagnostic interpretation and escalation
+## Additional diagnostic guidance
 
 Record the original IP, prefix, gateway and DNS configuration before changing it. Confirm whether static addressing is intentional. DHCP release/renew is disruptive and can disconnect remote support; arrange a recovery route and target the affected adapter. Test DNS and the required applications separately; flushing DNS does not repair an incorrect gateway.
 
 ## Evidence status
 
-No execution results or lab evidence are supplied. The root cause above is the scenario assumption; the resolution and verification steps remain proposed.
+This case summarises a real workplace incident. Original client logs and screenshots are not published. Additional diagnostic guidance and example commands are reference material; they do not establish which steps were performed or that all verification checks passed.

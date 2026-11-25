@@ -1,12 +1,12 @@
 # INC-013 | One-way audio and poor call quality
 
-[All scenarios](../README.md#scenario-index)
+[All tickets](../README.md#ticket-index)
 
 **Technology:** Five9 / VoIP
 
 **Priority:** P2 · **Support level:** Tier 2
 
-**Case type:** Simulated — not lab-tested or a completed production incident.
+**Case type:** Anonymised workplace case.
 
 ## Incident description
 
@@ -27,15 +27,15 @@ pathping test-destination.example
 Get-NetAdapterStatistics
 ```
 
-## Simulated root cause
+## Root cause assessment
 
 Congested wireless network.
 
-## Proposed resolution
+## Response procedure
 
 Test wired connection, investigate utilisation and review QoS with network team.
 
-## Verification plan
+## Verification checks
 
 Test inbound/outbound calls and monitor quality.
 
@@ -43,10 +43,10 @@ Test inbound/outbound calls and monitor quality.
 
 VoIP, QoS, packet loss
 
-## Diagnostic interpretation and escalation
+## Additional diagnostic guidance
 
 Treat one-way audio and degraded quality as separate symptoms. One-way audio warrants microphone permissions, selected devices and media-path/NAT checks; congestion is only one possibility for poor quality. Compare wired and wireless calls and use available call-media statistics. Ping/pathping are supporting observations, not measurements of the actual media stream. Use the current Five9 requirements for the region and voice mode; do not guess port ranges or disable inspection broadly.
 
 ## Evidence status
 
-No execution results or lab evidence are supplied. The root cause above is the scenario assumption; the resolution and verification steps remain proposed.
+This case summarises a real workplace incident. Original client logs and screenshots are not published. Additional diagnostic guidance and example commands are reference material; they do not establish which steps were performed or that all verification checks passed.

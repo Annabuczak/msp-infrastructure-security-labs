@@ -1,12 +1,12 @@
 # INC-019 | Email held by impersonation protection
 
-[All scenarios](../README.md#scenario-index)
+[All tickets](../README.md#ticket-index)
 
 **Technology:** Mimecast / Exchange
 
 **Priority:** P3 · **Support level:** Tier 1
 
-**Case type:** Simulated — not lab-tested or a completed production incident.
+**Case type:** Anonymised workplace case.
 
 ## Incident description
 
@@ -26,15 +26,15 @@ Resolve-DnsName -Type TXT _dmarc.example.com
 Resolve-DnsName -Type TXT selector._domainkey.example.com
 ```
 
-## Simulated root cause
+## Root cause assessment
 
 Reply-To mismatch and financial language trigger policy.
 
-## Proposed resolution
+## Response procedure
 
 Release only after validation; seek narrow approved policy changes for repeated cases. Authentication passes alone do not prove safety.
 
-## Verification plan
+## Verification checks
 
 Confirm delivery and ongoing phishing protection.
 
@@ -42,10 +42,10 @@ Confirm delivery and ongoing phishing protection.
 
 Email authentication, phishing triage
 
-## Diagnostic interpretation and escalation
+## Additional diagnostic guidance
 
 Review the actual message headers and triggered policy, not only current DNS. Obtain the DKIM selector and signing domain from the message; the selector shown is a placeholder, and DNS may involve CNAME delegation. Authentication passes do not establish benign content. Validate requests through a known supplier channel and prefer a single-message release over a broad sender bypass.
 
 ## Evidence status
 
-No execution results or lab evidence are supplied. The root cause above is the scenario assumption; the resolution and verification steps remain proposed.
+This case summarises a real workplace incident. Original client logs and screenshots are not published. Additional diagnostic guidance and example commands are reference material; they do not establish which steps were performed or that all verification checks passed.

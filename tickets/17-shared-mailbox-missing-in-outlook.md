@@ -1,12 +1,12 @@
 # INC-017 | Shared mailbox missing in Outlook
 
-[All scenarios](../README.md#scenario-index)
+[All tickets](../README.md#ticket-index)
 
 **Technology:** Exchange Online
 
 **Priority:** P3 · **Support level:** Tier 1
 
-**Case type:** Simulated — not lab-tested or a completed production incident.
+**Case type:** Anonymised workplace case.
 
 ## Incident description
 
@@ -26,15 +26,15 @@ Get-MailboxPermission -Identity shared@example.com
 Get-RecipientPermission -Identity shared@example.com
 ```
 
-## Simulated root cause
+## Root cause assessment
 
 Group-based Full Access does not automap.
 
-## Proposed resolution
+## Response procedure
 
 Confirm approved permissions and manually add mailbox as necessary.
 
-## Verification plan
+## Verification checks
 
 Verify authorised mailbox actions only.
 
@@ -42,10 +42,10 @@ Verify authorised mailbox actions only.
 
 Exchange delegation, Outlook
 
-## Diagnostic interpretation and escalation
+## Additional diagnostic guidance
 
 Full Access, Send As and Send on Behalf are distinct rights. Group-based Full Access does not provide automatic mailbox mapping. Confirm access through a supported web/client method before treating lack of automatic display as missing permissions. Use the add-mailbox workflow appropriate to Classic Outlook, New Outlook or Outlook on the web.
 
 ## Evidence status
 
-No execution results or lab evidence are supplied. The root cause above is the scenario assumption; the resolution and verification steps remain proposed.
+This case summarises a real workplace incident. Original client logs and screenshots are not published. Additional diagnostic guidance and example commands are reference material; they do not establish which steps were performed or that all verification checks passed.

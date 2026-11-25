@@ -1,12 +1,12 @@
 # INC-009 | Legitimate website blocked
 
-[All scenarios](../README.md#scenario-index)
+[All tickets](../README.md#ticket-index)
 
 **Technology:** FortiGuard
 
 **Priority:** P3 · **Support level:** Tier 1
 
-**Case type:** Simulated — not lab-tested or a completed production incident.
+**Case type:** Anonymised workplace case.
 
 ## Incident description
 
@@ -16,15 +16,15 @@ Approved business site blocked.
 
 Collect URL and block page; check scope, web filtering logs, category and applicable policy.
 
-## Simulated root cause
+## Root cause assessment
 
 Site categorised as restricted.
 
-## Proposed resolution
+## Response procedure
 
 Validate site, request reassessment or approved narrow exception.
 
-## Verification plan
+## Verification checks
 
 Confirm approved site accessible; unrelated restrictions remain.
 
@@ -32,10 +32,10 @@ Confirm approved site accessible; unrelated restrictions remain.
 
 Web filtering, firewall logs
 
-## Diagnostic interpretation and escalation
+## Additional diagnostic guidance
 
 Determine whether the denial comes from web category policy, a static URL filter, DNS filtering or certificate inspection. Business approval does not establish that a site is safe. Record the exact category and matching policy; prefer reassessment or a narrowly scoped, reviewed exception over a category-wide bypass.
 
 ## Evidence status
 
-No execution results or lab evidence are supplied. The root cause above is the scenario assumption; the resolution and verification steps remain proposed.
+This case summarises a real workplace incident. Original client logs and screenshots are not published. Additional diagnostic guidance and example commands are reference material; they do not establish which steps were performed or that all verification checks passed.

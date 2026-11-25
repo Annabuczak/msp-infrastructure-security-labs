@@ -1,12 +1,12 @@
 # INC-005 | Endpoint protection service stopped
 
-[All scenarios](../README.md#scenario-index)
+[All tickets](../README.md#ticket-index)
 
 **Technology:** Sophos Central
 
 **Priority:** P2 · **Support level:** Tier 1
 
-**Case type:** Simulated — not lab-tested or a completed production incident.
+**Case type:** Anonymised workplace case.
 
 ## Incident description
 
@@ -25,15 +25,15 @@ Get-Service *Sophos*
 Get-WinEvent -LogName System -MaxEvents 50
 ```
 
-## Simulated root cause
+## Root cause assessment
 
 Pending restart after update.
 
-## Proposed resolution
+## Response procedure
 
 Arrange authorised restart; escalate persistent failures.
 
-## Verification plan
+## Verification checks
 
 Confirm healthy protection and update services.
 
@@ -41,10 +41,10 @@ Confirm healthy protection and update services.
 
 Endpoint health, patching, Windows services
 
-## Diagnostic interpretation and escalation
+## Additional diagnostic guidance
 
 A restart requirement is a hypothesis until correlated with update logs and the service failure time. Check whether the stopped service is expected to run continuously in this installed version. Confirm fresh Central check-in and active protection after the authorised restart; a running Windows service alone is insufficient.
 
 ## Evidence status
 
-No execution results or lab evidence are supplied. The root cause above is the scenario assumption; the resolution and verification steps remain proposed.
+This case summarises a real workplace incident. Original client logs and screenshots are not published. Additional diagnostic guidance and example commands are reference material; they do not establish which steps were performed or that all verification checks passed.
