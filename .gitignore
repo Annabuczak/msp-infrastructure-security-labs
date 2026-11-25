@@ -1,0 +1,14 @@
+# Local tooling and private collection folders
+.DS_Store
+Thumbs.db
+__pycache__/
+.env
+.env.*
+!.env.example
+private-evidence/
+*.pcap
+*.pcapng
+*.har
+*.evtx
+*.pfx
+*.key
