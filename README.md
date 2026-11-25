@@ -1,12 +1,12 @@
 # Infrastructure & Security Engineering Portfolio
 
-20 simulated Tier 1 and Tier 2 troubleshooting cases covering endpoint protection, incident response, firewall policy, remote access, identity, email security and contact-centre infrastructure.
+20 anonymised workplace troubleshooting cases covering endpoint protection, incident response, firewall policy, remote access, identity, email security and contact-centre infrastructure.
 
-These scenarios develop structured investigation, root cause analysis, least privilege, containment and verification. They are adapted from my Notion incident library. **They have not been lab-tested and do not represent completed production incidents.** Commands are examples; no output or successful remediation is claimed.
+These cases are based on incidents I worked on as a Junior Infrastructure & Security Engineer. They document the issues, investigation approach, root cause assessment, response procedures and verification checks. Client information has been removed.
 
-## Scenario index
+## Ticket index
 
-| ID | Scenario | Technology |
+| ID | Case | Technology |
 | --- | --- | --- |
 | INC-001 | [Malware detection and endpoint isolation](tickets/01-malware-detection-and-endpoint-isolation.md) | Sophos Central / Intercept X |
 | INC-002 | [Endpoint not communicating with Central](tickets/02-endpoint-not-communicating-with-central.md) | Sophos Central |
@@ -29,11 +29,11 @@ These scenarios develop structured investigation, root cause analysis, least pri
 | INC-019 | [Email held by impersonation protection](tickets/19-email-held-by-impersonation-protection.md) | Mimecast / Exchange |
 | INC-020 | [Wi-Fi connected but no internet](tickets/20-wi-fi-connected-but-no-internet.md) | Windows / DHCP / DNS |
 
-## Using the cases
+## Reading the cases
 
-Each case contains the incident description, investigation, assumed root cause, proposed resolution and verification plan. Diagnostic notes explain what the available checks can establish and when to escalate. Priority and support tier are scenario values, not universal service-level definitions.
+These are concise accounts of workplace incidents, with supporting technical guidance. Commands and additional diagnostic notes are reference examples rather than a transcript of actions taken. The summaries do not record every execution result or final validation outcome.
 
-Before executing a scenario, record the product version, deployment mode, licence and authorised lab scope. Use approved changes and a rollback plan where needed. Add sanitised evidence and an actual outcome only after completing the exercise. Keep customer data, credentials, recovery keys and production logs out of this repository.
+Client identifiers, credentials, recovery keys and original production logs are not published. Priority and support tier reflect the case context.
 
 ## Workplace experience
 
